@@ -1,3 +1,4 @@
+
 const pages = {
   home: `
     <h1>Willkommen bei Five Lives Fashion</h1>
@@ -22,23 +23,30 @@ const pages = {
   `
 };
 
-const content = document.getElementById('content');
-const links = document.querySelectorAll('nav a');
 
 function loadPage(page) {
+  const content = document.getElementById('content');
+  if (!content) return;
   content.classList.remove('fade');
+
   setTimeout(() => {
     content.innerHTML = pages[page] || pages.home;
     content.classList.add('fade');
   }, 100);
 }
 
-links.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const page = link.getAttribute('data-page');
-    loadPage(page);
-  });
-});
 
-loadPage('home');
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('nav a');
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const page = link.getAttribute('data-page');
+      loadPage(page);
+    });
+  });
+
+  
+  loadPage('home');
+});
