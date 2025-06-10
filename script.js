@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       links.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
-      loadPage(link.getAttribute('data-page'));
+      const page = link.getAttribute('data-page');
+      loadPage(page);
     });
   });
 
