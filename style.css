@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #fff;
   color: #111;
+  font-size: 18px;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -14,47 +15,49 @@ body.dark {
 
 nav {
   background: #333;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.nav-center {
-  margin: 0 auto;
-  display: flex;
   gap: 1.5rem;
 }
 
-nav a {
+.nav-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 20px;
 }
 
-nav a.active {
+.nav-link.active {
   text-decoration: underline;
 }
 
-.theme-toggle {
+#themeToggle {
+  margin-left: auto;
   background: #eee;
   border: none;
   padding: 0.5rem 1rem;
+  font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
 }
 
-body.dark .theme-toggle {
+body.dark #themeToggle {
   background: #444;
   color: #fff;
 }
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
   line-height: 1.8;
 }
@@ -70,7 +73,7 @@ body.dark .theme-toggle {
 
 .spinner {
   display: none;
-  margin: 1rem auto;
+  margin: 2rem auto;
   width: 40px;
   height: 40px;
   border: 4px solid #ccc;
@@ -86,3 +89,4 @@ body.dark .theme-toggle {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
