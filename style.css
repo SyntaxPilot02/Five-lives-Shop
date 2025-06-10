@@ -1,28 +1,31 @@
-/* Glow эффекты */
 .nav-link {
   color: gold;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
   transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   position: relative;
+  z-index: 1;
 }
 
-/* Эффект при наведении */
+/* Наведение — легкий неоновый glow */
 .nav-link:hover {
-  color: #c084fc; /* светло-фиолетовый */
-  text-shadow: 0 0 8px #c084fc, 0 0 12px #c084fc;
+  color: #c084fc;
+  box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7;
 }
 
-/* Эффект при клике */
+/* Клик — короткий яркий glow + нажатие */
 .nav-link:active {
-  text-shadow: 0 0 10px #a855f7, 0 0 15px #a855f7;
-  transform: scale(0.97);
+  color: #d8b4fe;
+  box-shadow: 0 0 14px #9333ea, 0 0 30px #9333ea;
+  transform: scale(0.96);
 }
 
-/* Подсветка активной кнопки (на текущей странице) */
+/* Активная ссылка — постоянный фиолетовый свет */
 .nav-link.active {
-  color: #e9d5ff;
-  text-shadow: 0 0 12px #a855f7, 0 0 18px #9333ea, 0 0 24px #7e22ce;
-  text-decoration: none;
+  color: #f3e8ff;
+  box-shadow: 0 0 12px #9333ea, 0 0 24px #9333ea, 0 0 36px #7e22ce;
+  background-color: transparent;
 }
