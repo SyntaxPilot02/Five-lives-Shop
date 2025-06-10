@@ -63,8 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       links.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
-      const page = link.getAttribute('data-page');
-      loadPage(page);
+      loadPage(link.dataset.page);
     });
   });
 
@@ -74,5 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   loadPage('home');
 });
+
 
 
