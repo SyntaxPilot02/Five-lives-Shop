@@ -1,4 +1,17 @@
-/* HTML-шаблоны страниц */
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      const page = link.dataset.page;
+      loadPage(page);
+    });
+  });
+
+ /* HTML-шаблоны страниц */
 const pages = {
   home: `
     <h1>Willkommen bei Five Lives Fashion</h1>
@@ -76,6 +89,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   /* Загрузить главную страницу */
   loadPage('home');
+});
+
 });
 
 
