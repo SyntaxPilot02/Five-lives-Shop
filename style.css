@@ -40,7 +40,6 @@ nav {
 }
 
 #themeToggle {
-  margin-left: auto;
   background: #eee;
   border: none;
   padding: 0.5rem 1rem;
@@ -89,4 +88,3 @@ body.dark #themeToggle {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-
