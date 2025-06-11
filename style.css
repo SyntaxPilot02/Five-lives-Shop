@@ -13,7 +13,7 @@ body.dark {
   color: #eee;
 }
 
-/* Навигация */
+
 nav {
   background: #333;
   padding: 1rem;
@@ -27,7 +27,7 @@ nav {
 .nav-center {
   display: flex;
   gap: 2rem;
-  flex-wrap: nowrap; /* 🛠️ фикс: ВСЕГДА в одну строку */
+  flex-wrap: nowrap; 
   justify-content: center;
   align-items: center;
 }
@@ -58,12 +58,12 @@ nav {
   line-height: 1;
 }
 
-/* Поддержка темной темы */
+
 body.dark #themeToggle {
   color: gold;
 }
 
-/* Контент */
+
 .container {
   max-width: 900px;
   margin: 2rem auto;
@@ -80,7 +80,7 @@ body.dark #themeToggle {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Спиннер */
+
 .spinner {
   display: none;
   margin: 2rem auto;
