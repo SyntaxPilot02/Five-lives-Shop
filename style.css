@@ -9,7 +9,7 @@ body {
 }
 
 body.dark {
-  background: #111;
+  background: #111;/* тёмная тема */
   color: #eee;
 }
 
