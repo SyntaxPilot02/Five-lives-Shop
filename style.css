@@ -9,10 +9,9 @@ body {
 }
 
 body.dark {
-  background: #111;/* тёмная тема */
+  background: #111;
   color: #eee;
 }
-
 
 nav {
   background: #333;
@@ -58,11 +57,9 @@ nav {
   line-height: 1;
 }
 
-
 body.dark #themeToggle {
   color: gold;
 }
-
 
 .container {
   max-width: 900px;
@@ -79,7 +76,6 @@ body.dark #themeToggle {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 
 .spinner {
   display: none;
@@ -100,3 +96,24 @@ body.dark #themeToggle {
   to { transform: rotate(360deg); }
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.photo-placeholder {
+  background: #ddd;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  border: 2px solid #bbb;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .photo-placeholder {
+  background: #444;
+  border-color: #666;
+}
