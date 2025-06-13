@@ -20,6 +20,12 @@ const pages = {
       ✔️ Limitierte Editionen mit einzigartigen Prints – nur solange der Vorrat reicht!
     </p>
     <p>Unsere Stoffe stammen aus verantwortungsvoller Produktion. Nachhaltigkeit und Stil gehen bei uns Hand in Hand.</p>
+    <div class="photo-grid">
+      <div class="photo-placeholder"></div>
+      <div class="photo-placeholder"></div>
+      <div class="photo-placeholder"></div>
+      <div class="photo-placeholder"></div>
+    </div>
   `,
   contact: `
     <h1>Kontakt & Kundenservice</h1>
