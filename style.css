@@ -254,7 +254,7 @@ body.dark .add-to-cart {
   height: 50px;
   width: auto;
   object-fit: contain;
-  border-radius: 8px; /* optional */
+  border-radius: 8px; 
 }
 
 .nav-center {
@@ -266,7 +266,7 @@ body.dark .add-to-cart {
 
 
 
-/* New Feature: Cart Window Styling */
+
 .cart-window {
     width: 300px;
     background: linear-gradient(to bottom right, purple, black);
