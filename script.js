@@ -68,9 +68,9 @@ function updateCartUI() {
       <div class="cart-item-line">
         <span>${item}</span>
         <div class="cart-controls">
-          <button class="qty-btn" data-action="decrease" data-item="${item}">➖</button>
+          <button class="qty-btn" data-action="decrease" data-item="${item}">-</button>
           <span>${quantity}</span>
-          <button class="qty-btn" data-action="increase" data-item="${item}">➕</button>
+          <button class="qty-btn" data-action="increase" data-item="${item}">+</button>
           <button class="delete-btn" data-item="${item}">🗑️</button>
         </div>
       </div>
