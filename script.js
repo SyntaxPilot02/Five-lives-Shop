@@ -172,8 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// New Feature: Confirm Order Button
-const cartItems = ['Item1', 'Item2', 'Item3']; // Dummy cart items for demo
+
+const cartItems = ['Item1', 'Item2', 'Item3']; 
 
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('confirm-btn');
